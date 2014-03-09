@@ -655,6 +655,7 @@ object {
 .group {
   position: relative;
   width: 100%;
+  line-height: 0;
 }
 
 .groupimage {
@@ -665,6 +666,7 @@ object {
   position: absolute;
   top: 75%;
   right: 10%;
+  line-height: 1.5;
 }
 
 .headline {

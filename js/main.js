@@ -4,4 +4,5 @@ jQuery(document).ready(function($) {
     console.log('backgroundStyle', backgroundStyle, $(this));
     $(this).css("background-image", backgroundStyle);
   });
+
 });

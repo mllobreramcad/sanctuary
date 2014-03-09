@@ -98,9 +98,6 @@ function sanctuary_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
   wp_enqueue_script( 'jquery');
-  wp_enqueue_script( 'scrollorama', get_template_directory_uri() . '/js/jquery.scrollorama.js', array('jquery'), '', true );
-  wp_enqueue_script( 'scrolldeck', get_template_directory_uri() . '/js/jquery.scrolldeck.js', array('jquery'), '', true );
-  wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array('jquery'), '', true );
   wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/jquery.parallax-1.1.js', array('jquery'), '', true );
   wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true );
 }

@@ -85,6 +85,10 @@ add_action( 'widgets_init', 'sanctuary_widgets_init' );
  */
 function sanctuary_scripts() {
 	wp_enqueue_style( 'sanctuary-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'arvo', "http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic" );
+	wp_enqueue_style( 'opensans', "http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" );
+	wp_enqueue_style( 'opensans-condensed', "http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic" );
+  
 
 	//wp_enqueue_script( 'sanctuary-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

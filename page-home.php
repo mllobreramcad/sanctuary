@@ -19,11 +19,10 @@ get_header(); ?>
           while ( have_rows('section') ) : the_row();
  
               // display a sub field value
-              the_sub_field('headline');
-              the_sub_field('subhead');
-              the_sub_field('text_style');
+              $headline = get_sub_field('headline');
+              $subhead = get_sub_field('subhead');
+              $text_style = get_sub_field('text_style');
               $image = get_sub_field('background_image');
-              echo $image['url'];
  
           endwhile;
  

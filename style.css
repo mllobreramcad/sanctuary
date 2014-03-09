@@ -661,6 +661,12 @@ object {
   width: 100%;
 }
 
+.headsubhead {
+  position: absolute;
+  top: 75%;
+  right: 10%;
+}
+
 .headline {
   color: #fff;
   font-family: 'Arvo';
@@ -669,6 +675,7 @@ object {
   text-align:left;
   position:relative;
   text-shadow:2px 2px 4px black;
+  line-height: 0;
 }
 
 .subhead {

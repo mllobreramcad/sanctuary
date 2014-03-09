@@ -42,6 +42,7 @@ and Blueprint http://www.blueprintcss.org/
 	10.3 - Comments
 11.0 - Infinite scroll
 12.0 - Media
+13.0 - Sanctuary
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -645,4 +646,35 @@ embed,
 iframe,
 object {
 	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+13.0 Sanctuary
+--------------------------------------------------------------*/
+
+.group {
+  position: relative;
+  width: 100%;
+}
+
+.groupimage {
+  width: 100%;
+}
+
+.headline {
+  color: #fff;
+  font-family: 'Arvo';
+  font-weight: 700;
+  font-size: 1.875em; /* 30px / 16px */
+  text-align:left;
+  position:relative;
+  text-shadow:2px 2px 4px black;
+}
+
+.subhead {
+    color:#fff;
+    font-family:'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 3em; /* 48px / 16px */
+    text-shadow:2px 2px 4px black;
 }

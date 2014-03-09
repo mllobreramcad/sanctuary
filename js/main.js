@@ -14,5 +14,4 @@ jQuery(document).ready(function($) {
   $('.group3').parallax("50%", 1600, 0.1, true);
   $('.group4').parallax("50%", 2400, 0.1, true);
   $('.group5').parallax("50%", 3200, 0.1, true);
-    
 });

@@ -5,10 +5,19 @@ jQuery(document).ready(function($) {
     $(this).css("background-image", backgroundStyle);
   });
   
-  $('.group1').parallax("50%", 0, 0.1, true);
-  $('.group2').parallax("50%", 0, 0.1, true);
-  $('.group3').parallax("50%", 0, 0.1, true);
-  $('.group4').parallax("50%", 0, 0.1, true);
-  $('.group5').parallax("50%", 0, 0.1, true);
+  $('.groupbackground').each(function(){
+    $(this).css("display","none");
+  });
   
+  // $('.group1').parallax("50%", 0, 0.1, true);
+  // $('.group2').parallax("50%", 0, 0.1, true);
+  // $('.group3').parallax("50%", 0, 0.1, true);
+  // $('.group4').parallax("50%", 0, 0.1, true);
+  // $('.group5').parallax("50%", 0, 0.1, true);
+  $('.group1').parallax("50%", 0, 0.1, true);
+  $('.group2').parallax("50%", 864, 0.1, true);
+  $('.group3').parallax("50%", 1600, 0.1, true);
+  $('.group4').parallax("50%", 2400, 0.1, true);
+  $('.group5').parallax("50%", 3200, 0.1, true);
+    
 });

@@ -656,38 +656,7 @@ object {
   position: relative;
   width: 100%;
   line-height: 0;
-}
-
-.group1 {
   background-size: 100%;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 864px;
-}
-.group2 {
-  background-size: 100%;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  min-height: 864px;
-}
-.group3 {
-  background-size: 100%;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 864px;
-}
-.group4 {
-  background-size: 100%;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 864px;
-}
-.group5 {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;

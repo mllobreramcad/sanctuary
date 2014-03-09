@@ -30,6 +30,9 @@ get_header(); ?>
                   <h1 class="headline"><?php echo $headline; ?></h1>
                   <h2 class="subhead"><?php echo $subhead; ?></h2>
               </div>
+              <div class="groupbackground">
+                <img class="groupimage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
+              </div>
           </div>
           
         <?php $count++; ?>

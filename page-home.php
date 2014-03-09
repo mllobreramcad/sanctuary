@@ -16,6 +16,7 @@ get_header(); ?>
       if( have_rows('section') ):
  
        	// loop through the rows of data
+        $count = 1;
           while ( have_rows('section') ) : the_row();
  
               // display a sub field value
@@ -23,10 +24,21 @@ get_header(); ?>
               $subhead = get_sub_field('subhead');
               $text_style = get_sub_field('text_style');
               $image = get_sub_field('background_image');
+          ?>
+          <div class="group group<?php echo $count; ?>">
+              <div class="headsubhead <?php echo $text_style;  ?>">
+                  <h1 class="headline"><?php echo $headline; ?></h1>
+                  <h2 class="subhead"><?php echo $subhead; ?></h2>
+              </div>
+              <div class="background">
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>">
+              </div>
+          </div>
+          
+        <?php $count++; ?>
+        <?php endwhile; ?>
  
-          endwhile;
- 
-      else :
+      <?php else :
  
           echo "No content in our repeater!";
  

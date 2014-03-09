@@ -10,21 +10,32 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // end of the loop. ?>
+      <?php
+ 
+      // check if the repeater field has rows of data
+      if( have_rows('section') ):
+ 
+       	// loop through the rows of data
+          while ( have_rows('section') ) : the_row();
+ 
+              // display a sub field value
+              the_sub_field('headline');
+              the_sub_field('subhead');
+              the_sub_field('text_style');
+              $image = get_sub_field('background_image');
+              echo $image['url'];
+ 
+          endwhile;
+ 
+      else :
+ 
+          echo "No content in our repeater!";
+ 
+      endif;
+ 
+      ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
